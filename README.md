@@ -4,9 +4,9 @@
 # Medical Chatbot with LLMs,LangChain,Pinecone,Flask and AWS
 
 # How to run?
-### STEPS:
+### STEPS :
 
-Clone the repository
+Clone the repository 
 
 ```bash
 git clone git@github.com:ma-heshpandey/Medical-Chatbot.git
