@@ -9,25 +9,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_pinecone import PineconeVectorStore
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-load_dotenv(override=True)
-
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-os.environ["PINECONE_API_KEY"]= PINECONE_API_KEY
-os.environ["GOOGLE_API_KEY"]= GOOGLE_API_KEY
-
-import os
-from dotenv import load_dotenv
-from flask import Flask, render_template, request
-
-from src.helper import download_embeddings
-from src.prompt import system_prompt
-from langchain.chains import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_pinecone import PineconeVectorStore
-from langchain_google_genai import ChatGoogleGenerativeAI
-
 
 load_dotenv(override=True)
 
